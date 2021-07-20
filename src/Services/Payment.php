@@ -5,6 +5,7 @@ namespace App\Services;
 use App\Services\Gateway\{
     AopF2F,
     Codepay,
+	Vmqpay,
     PaymentWall,
     SPay,
     PAYJS,
@@ -22,6 +23,8 @@ class Payment
         switch ($method) {
             case ('codepay'):
                 return new Codepay();
+            case ('vmqpay'):
+                return new Vmqpay();
             case ('paymentwall'):
                 return new PaymentWall();
             case ('spay'):

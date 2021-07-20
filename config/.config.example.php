@@ -285,8 +285,12 @@ $_ENV['enable_checkin_captcha'] = false;        //启用签到验证码
 
 
 //支付系统设置----------------------------------------------------------------------------------------
-#取值 none | f2fpay | paymentwall | spay | payjs | bitpayx | theadpay | coinpay
+#取值 none | f2fpay | paymentwall | spay | payjs | bitpayx | theadpay | coinpay | vmqpay
 $_ENV['payment_system']       = 'none';     // todo: ['gateway1', 'gateway2']
+
+# vmqpay
+$_ENV['vmqpay_key']           = '';          //v免签通讯密钥
+$_ENV['vmqpay_gateway']       = '';          //v免签网关地址如 https://pay.com
 
 # codepay码支付
 $_ENV['codepay_id']           = '';          //码支付ID
